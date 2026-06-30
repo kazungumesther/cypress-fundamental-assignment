@@ -1,3 +1,50 @@
-Working on this Cypress assignment helped me understand the basics of automated testing and how tests are organized in a real QA project. The easiest concept for me to understand was the basic Cypress commands such as cy.visit(), cy.get(), cy.type(), and cy.click(). These commands are straightforward because they closely resemble the actions a user performs on a website. I also found the use of describe() and it() easy to understand since they provide a clear structure for organizing test cases and make the test files easier to read and maintain.
-The most challenging part was understanding element locators and assertions. Choosing the correct selector for an element and knowing when to use assertions like should() and expect() required careful attention. I also found working with tables, file uploads, browser interactions, and waiting for elements or API requests more difficult because they involve additional concepts beyond simple page interactions. Learning why fixed waits such as cy.wait(5000) are discouraged and how Cypress automatically waits for elements was an important lesson that improved my understanding of reliable test automation.
-After completing this assignment, I have gained confidence in writing basic Cypress tests and organizing them into separate files. I would like to learn more about advanced Cypress features, especially cy.intercept() for API testing, cy.fixture() for managing test data, the Page Object Model (POM) for creating maintainable test frameworks, and integrating Cypress with Continuous Integration (CI) tools such as GitHub Actions. These skills will help me build more scalable, reliable, and professional automated test suites as I continue developing my career in Quality Assurance.
+What I Learned
+Test Structure
+I learned how to organize tests using describe() and it(), and how to use hooks such as before(), beforeEach(), after(), and afterEach() to prepare and clean up test environments.
+
+Assertions
+I learned how to verify expected results using should() and expect(). These assertions help confirm that elements exist, are visible, contain the correct text, or have the expected values and attributes.
+
+Basic Cypress Commands
+I practiced using common commands such as:
+cy.visit()
+cy.get()
+cy.type()
+cy.click()
+cy.clear()
+cy.select()
+cy.scrollIntoView()
+These commands simulate user interactions with web applications.
+
+Locators
+I learned different ways of locating web elements using:
+cy.get()
+cy.contains()
+.find()
+.parent()
+.children()
+.closest()
+.first()
+.last()
+.eq()
+.within()
+I also learned why IDs and data-cy attributes are preferred over long CSS selectors because they make tests more stable and easier to maintain.
+
+Working with Elements
+I practiced interacting with buttons, text fields, password fields, checkboxes, radio buttons, dropdown menus, text areas, links, and images.
+
+Forms
+I learned how to automate filling out forms, selecting options, submitting data, and verifying successful form submissions.
+
+Tables
+I learned how to count rows and columns, read table data, verify table contents, and interact with elements inside table rows.
+
+Browser and Keyboard Interactions
+I explored browser navigation, page reloads, alerts, confirmation dialogs, and keyboard actions such as Enter, Escape, Backspace, Delete, and arrow keys.
+
+Scrolling and File Upload
+I learned how to scroll to different sections of a page and upload files using Cypress.
+
+Mini Project
+The mini project allowed me to combine multiple Cypress concepts into one complete automation test. It helped me understand how to structure a real-world automated test using hooks, commands, assertions, and element interactions.
+
